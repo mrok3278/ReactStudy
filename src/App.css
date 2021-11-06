@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  font-family: "nanumsquare";
+}
+
+.black-nav {
+  background: #000000;
+  width: 100%;
+  display: flex;
+  color: #ffffff;
+  padding: 20px;
+  font-weight: 600;
+  font-size: 20px;
+}

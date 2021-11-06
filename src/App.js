@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
+  let post = "Post";
+  let [title, titleFn] = useState("TITLE");
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="black-nav">
+        <div style={{ color: "blue", fontSize: "30px" }}>React blog</div>
+      </div>
+      <h4>{post}</h4>
+      <h3>{title}</h3>
+      <img src={logo} alt="LOGO"></img>
     </div>
   );
 }
